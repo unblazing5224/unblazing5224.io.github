@@ -1,37 +1,140 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+  </script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+	  
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: black;
+	color: red;
+	font-size: 150%;
+      height: 150%;
+	font-family: 'Bangers', cursive;
+	
+	
+    }
+    body {
+		font-family: 'Bangers', cursive;
+		font-size: 180%;
+		background-color: black;
+		color: red;
+	}	
+	
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: red;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
 
-You can use the [editor on GitHub](https://github.com/unblazing5224/unblazing5224.io.github/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Hidden Village's Blogs</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="https://ultimateninjablazingx.com/">Game Info</a></li>
+        <li><a href= href="https://comicvine.gamespot.com/boruto-uzumaki/4005-109367/friends/">Friends</a></li>
+        <li><a href="https://wall.alphacoders.com/tags.php?tid=34946">Photos</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2> This is taking to long Big-bro Konohamaru.</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Boruto Uzumaki, Sep 27, 2018.</h5>
+      <h5><span class="label label-danger">Training</span> <span class="label label-primary">Rasengan</span></h5><br>
+      <p>Why am i practicing with a water ballon? There should be something more efficent than this.</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Message to all the villages</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by 7th Hokage, Sep 26, 2018.</h5>
+      <h5><span class="label label-success">Chunin Exams</span></h5><br>
+      <p>This is a message to all the villages.The chunin exams are coming soon.I hope to see all the wonderful genin from all the villages here at the land of fire. Oh....and boruto..good luck.</p>
+      <hr>
 
-### Markdown
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">3</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="https://static.comicvine.com/uploads/scale_small/11117/111173561/6257290-8361232029-latest" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Konohamaru <small>Sep 27, 2018, 9:12 PM</small></h4>
+          <p>The Fourth, or in other words, your grandfather,took three years to develop this jutsu...And from there it took him approximately half a year to master it! The degree of the rasengan's difficulty is A. Did you really expect it to be so easy?</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-G2v-YXIyrEJPM1FrC8SkLg6aU9e2AGXq_rbgtO9jP1Amh5d" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Minato Namikaze<small>Sep 27, 2018, 9:25 PM</small></h4>
+          <p>Yes boruto,listen to your friend here.Do you know how long it took me to make the rasengan?</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="https://38.media.tumblr.com/523d9b4c5120747d87e2b5869d8efc2a/tumblr_ntlshkEMCs1r4pq4io1_500.gif" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>7th Hokage <small>Sep 27, 2018, 9:30 PM</small></h4>
+              <p>Dad!?!???</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/unblazing5224/unblazing5224.io.github/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<footer class="container-fluid">
+  <p>Theme from w3schools.com</p>
+</footer>
